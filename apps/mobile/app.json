@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "FICOIM",
+    "slug": "ficoim",
+    "version": "0.1.0",
+    "scheme": "ficoim",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": { "supportsTablet": false, "bundleIdentifier": "id.ficoim.app" },
+    "android": { "package": "id.ficoim.app", "adaptiveIcon": { "backgroundColor": "#4338ca" } },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "FICOIM memakai kamera untuk memindai barcode produk dan memotret produk/nota." }],
+      ["expo-image-picker", { "photosPermission": "FICOIM mengakses foto untuk melampirkan foto produk dan nota.", "cameraPermission": "FICOIM memakai kamera untuk memotret produk dan nota." }],
+      "expo-sqlite"
+    ]
+  }
+}

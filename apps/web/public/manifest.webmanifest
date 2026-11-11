@@ -1,0 +1,11 @@
+{
+  "name": "FICOIM — Keuangan & Inventaris UMKM",
+  "short_name": "FICOIM",
+  "description": "Kasir, stok, hutang-piutang, dan laporan untuk UMKM.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f1f5f9",
+  "theme_color": "#4f46e5",
+  "lang": "id",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

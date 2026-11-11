@@ -1,0 +1,23 @@
+{
+  "name": "@ficoim/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx src/dev-server.ts",
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit -p ../../tsconfig.json"
+  },
+  "dependencies": {
+    "@ficoim/core": "*",
+    "@ficoim/shared": "*"
+  },
+  "optionalDependencies": {
+    "argon2": "^0.41.0",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.0"
+  }
+}
