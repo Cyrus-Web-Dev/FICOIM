@@ -1,0 +1,39 @@
+{
+  "name": "ficoim",
+  "private": true,
+  "version": "0.1.0",
+  "description": "FICOIM \u2014 Finance Control & Inventory Management untuk UMKM (web + mobile offline-first)",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "gen:sql": "tsx packages/shared/scripts/gen-sql.ts",
+    "check:sql": "tsx packages/shared/scripts/gen-sql.ts --check",
+    "test": "tsx --test \"packages/*/test/*.test.ts\"",
+    "typecheck": "tsc --noEmit -p tsconfig.json && npm run typecheck -w apps/mobile --if-present",
+    "dev:api": "tsx packages/api/src/dev-server.ts",
+    "dev:web": "npm run dev -w apps/web",
+    "build:web": "npm run build -w apps/web",
+    "test:e2e": "npm run test:e2e -w apps/web",
+    "dev:mobile": "npm run start -w apps/mobile",
+    "audit": "tsx scripts/audit-imports.ts",
+    "check:deps": "npm ls react react-dom react-native expo-file-system"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "~19.2.4",
+    "@types/react-dom": "~19.2.0"
+  },
+  "overrides": {
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native-css": "3.1.0-rc.1",
+    "nativewind": "5.0.0-rc.1"
+  }
+}
